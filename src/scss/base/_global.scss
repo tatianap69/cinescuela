@@ -1,0 +1,243 @@
+@use 'variables' as v;
+
+body {
+    font-family: v.$fuente-principal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    // * {
+    //     text-decoration: none;
+
+    //     &:hover,
+    //     &:focus,
+    //     &:active,
+    //     &:visited {
+    //         text-decoration: none;
+    //     }
+    // }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 1) 50%);
+
+    #menu-superior {
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            font-weight: 500;
+            color: v.$blanco;
+        }
+
+        svg {
+            width: 20px;
+            stroke: v.$blanco;
+        }
+    }
+}
+
+
+.carousel-item {
+    height: 600px;
+    background: rgba(0, 0, 0, 0.336);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.carousel-caption {
+    bottom: 20%;
+    padding: 10px;
+    border-radius: 10px;
+
+    span {
+        font-size: 3rem;
+        color: v.$blanco;
+        font-family: v.$fuente-principal;
+        text-transform: uppercase;
+    }
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px 20px;
+    position: relative;
+}
+
+
+.titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 30px;
+}
+
+#informacion {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    #informacion-texto {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    #informacion-contenedor {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 25px;
+
+            .numero {
+                font-size: 5rem;
+                font-weight: 350;
+                margin-bottom: 5px;
+            }
+
+            .palabra {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+#peliculas-mes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all .6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    }
+}
+
+
+#ciclo {
+    a {
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 730px;
+        margin: 0 auto;
+        background-color: #037a19;
+        display: block;
+        color: v.$blanco;
+
+
+        &:hover {
+            text-decoration: none;
+        }
+
+
+        img {
+            transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .info {
+            padding: 20px 44px;
+
+            h2 {
+                font-style: normal;
+            }
+        }
+    }
+}
+
+#novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        width: 100%;
+        color: v.$gris;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: 220px;
+        }
+
+        span {
+            font-weight: 200;
+        }
+    }
+}
+
+footer {
+    background-color: v.$gris-osc;
+    padding: 42px 0 0;
+
+    .copy {
+        text-align: center;
+        background-color: #037a19;
+        color: v.$blanco;
+        margin: 0;
+        padding: 2px;
+    }
+}
