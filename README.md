@@ -6,6 +6,7 @@ El objetivo es mostrar información actualizada como carrusel de imágenes, dato
 ---
 
 ## 🚀 Características
+
 - Uso de **PHP** para consumir datos en formato JSON.
 - Diseño responsivo con **Bootstrap 4**
 - Navegación principal con íconos SVG.
@@ -18,20 +19,27 @@ El objetivo es mostrar información actualizada como carrusel de imágenes, dato
 
 ## ▶️ Cómo ejecutar el proyecto
 
-1. Clonar el repositorio:  
+1. Clonar el repositorio:
    ```bash
    git clone https://github.com/tatianap69/cinescuela
    ```
-2. Entrar al directorio del proyecto:  
+2. Entrar al directorio del proyecto:
    ```bash
    cd cinescuela
    ```
+3. Ejecutar el proyecto con Gulp:
+   ```bash
+   npm run dev
+   ```
 
 ### 🔹 Servidor embebido de PHP
+
 1. En la terminal del proyecto, ejecutar:
 
    ```bash
    php -S localhost:8000
+
+   ```
 
 2. En el navegador, abrir la URL: http://localhost:8000/index.php
 
@@ -40,7 +48,7 @@ El objetivo es mostrar información actualizada como carrusel de imágenes, dato
 ## 👩‍💻 Tecnologías utilizadas
 
 - **PHP 7**
-- **Bootstrap 4** 
-- **JavaScript** 
-- **Google Fonts** 
+- **Bootstrap 4**
+- **JavaScript**
+- **Google Fonts**
 - **API REST Cinescuela**
